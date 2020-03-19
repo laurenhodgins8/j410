@@ -1,0 +1,333 @@
+<!doctype html>
+
+<html>
+	
+<head>
+	
+<!--The following displays language used in browser to interpret page -->
+<meta charset="UTF-8">
+
+<!--The following line of code displays the page title on a browser tab -->
+<title>Benefits of CBD for Anxiety | Home</title>
+
+<!--link tags are for linking to external files, in this case your CSS stylesheet-->
+<link href="style.css" rel="stylesheet" type="text/css">
+	
+<!--link tags are for linking to external files, in this case a special CSS stylesheet-->
+<link href="normalize.css" rel="stylesheet" type="text/css">
+
+<!--the following tag tells the browser to adjust the site according to screen size-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--The following code links to the jquery library -->
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+
+<!--The following code links to the javascript file that runs the slideshow -->	
+<script type="text/javascript" src="js/jquery.cycle2.min.js"></script>
+    
+<!--The following code links to the javascript file that runs the parallax image -->    
+<script src="js/parallax.min.js"></script>
+	
+<!--The following code links to Google Fonts-->
+<link href="https://fonts.googleapis.com/css?family=Barlow|Raleway:400,900&display=swap" rel="stylesheet">
+    
+ <!--The following adds favicon images -- be sure to verify paths-->   
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+    
+<!--The following javscript runs the jquery slideshow -->
+<script type="text/javascript">
+$('#slider').cycle({});
+</script>
+
+<!--The following javascript runs the nav bar which disappears on scroll-->
+<script type="text/javascript">
+// Hide Header on on scroll down
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('header').outerHeight();
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+    var st = $(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('header').removeClass('nav-down').addClass('nav-up');
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('header').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+    
+    lastScrollTop = st;
+}
+</script>
+    
+<!--Favicon - images are in a folder called 'fav'-->
+<link rel="apple-touch-icon" sizes="180x180" href="img/fav/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16x16.png">
+<link rel="manifest" href="img/fav/site.webmanifest">
+<link rel="mask-icon" href="img/fav/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<!--End Favicon-->
+    
+<!--back to top button-->
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}    
+</script>   
+</head>
+
+<body>
+
+<!--beginning of navigation section-->
+<header>
+<div class="nav-container">
+<div class="brand"><img src="img/LOGO.jpg" width="100" height="56" alt=""/></div>
+<nav>
+<div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+  <ul class="nav-list">
+        <li>
+          <a href="#home">Home</a>
+        </li>
+	   <li>
+          <a href="#gal">A Student Perspective</a>
+		  </li>
+	  	<li>
+          <a href="#tl">Would you use CBD?</a>
+        </li>
+        <li>
+          <a href="#vid">Hearing From a Professional</a>
+			</li>
+      <li>
+          <a href="#num">History of CBD</a>
+			</li>
+      </ul>
+</nav>
+</div>
+<!--closing navigation tag-->
+</header>
+<!--end of navigation section-->
+    
+<!--main image-->
+<div class="container">
+ <svg viewBox="0 0 1280 720">
+  <text text-anchor="middle" x="50%" y="50%"></text>
+</svg>
+</div>
+<!--animated welcome-->
+<div class="wrapper">
+<!--animated welcome code here-->	
+</div>
+    
+<!--beginning of main content area-->
+<div class="row whiteBG">
+<h2 id="home">Many have found relief from their anxiety through the use of CBD</h2>
+<article>
+<p class="tab">The use of CBD can help alleviate some of the anxiety symptoms that many college students deal with. <br><br></p>
+<p class="tab"><a href="#gal">Student Perspective</a></p>
+</article>
+</div>
+
+<!--beginning of slideshow section-->
+<div class="row blueBG"><!--beginning of row-->
+<h2 id="gal">A Student Perspective</h2>
+<article><!--beginning of article-->
+<p class="tab">Follow along as 3rd year Macie Miller searches for a new CBD product to help allevite some anxiety symptoms.</p>
+<!--beginning of slideshow-->
+<div id="slider"
+data-cycle-caption="#alt-caption"
+data-cycle-caption-template="{{alt}}"
+data-cycle-fx="scrollHorz"
+data-cycle-pause-on-hover="true"
+data-cycle-speed="200">
+<div class="cycle-prev"></div>
+<div class="cycle-next"></div>
+<img src="img/1.jpg" width="100%" height="100%" alt="On Feb. 10, Macie Miller a 3rd year public health major at Cal Poly San Luis Obispo, who uses CBD to alleviate her anxiety, went on a hunt in Morro Bay to find a new CBD product."/>
+<img src="img/2.jpg" width="100%" height="100%" alt="“I use CBD to help with my anxiety, and I really like it because it just takes the edge off of things that would normally make me anxious. I’ve tried many different kinds, and when I use CBD I really see a difference” said Miller on her experience with CBD."/>
+<img src="img/3.jpg" width="100%" height="100%" alt="The shop that Miller decided to check out was Megan’s C.B.D. Market, which is located on Morro Bay Boulevard and used to only be a delivery service before it opened up shop in Morro Bay."/>
+<img src="img/4.jpg" width="100%" height="100%" alt="Miller likes to experiment with different types of CBD to find what works best for her. These days, CBD comes in every shape and form that you could think of."/>
+<img src="img/5.jpg" width="100%" height="100%" alt="Megan’s C.B.D. Market offers a wide variety of CBD products ranging from drops, bath bombs, pills, olive oils and even dog treats. They also have a natural deodorant that contains CBD."/>
+<img src="img/6.jpg" width="100%" height="100%" alt="“I have known Macie since the beginning of college, and ever since she has started using CBD, I have noticed very positive changes in her mental health, specifically her anxiety. She seems much calmer and less stressed when met with difficult circumstances.” said Mayumi Rubin-Saika a 3rd year public health major and Miller’s roommate."/>
+<img src="img/7.jpg" width="100%" height="100%" alt="This form of CBD contains no THC and requires only a few drops to be placed underneath the tongue."/>
+<img src="img/8.jpg" width="100%" height="100%" alt="“CBD helps ease the mind so you’re not overly thinking, which is perfect for anxiety because it eases the mind naturally and does not have any side effects.” said Raven Deharo an employee at Megan’s as she checked out Miller’s ID."/>
+<img src="img/9.jpg" width="100%" height="100%" alt="Megan’s C.B.D. Market has personalized business cards to fit the aesthetic of the shop."/>
+<img src="img/10.jpg" width="100%" height="100%" alt="No product is the same and each person has to decide what works best for them and their anxiety. Miller is sure to continue experimenting but as for now she has a new product to add to her collection."/>
+</div><!--end of slideshow-->
+<!--beginning of slideshow caption-->
+<div id="alt-caption" class="center">
+</div><!--end of slideshow caption-->
+<p class="tab"><a href="#tl">Students Opinions</a></p>
+</article><!--end of article-->
+</div><!--end of row-->
+<!--end of slideshow section-->
+	
+<!--beginning of audio section-->
+<div class="row whiteBG">
+<h2 id="tl">Would you use CBD?</h2>
+<article>
+  <p class="tab">Click on images to hear ...<br>(Double-click to pause audio)</p>
+  <div class="table">
+	<div id="trip">
+<audio id="audio_1">
+    <source src="audio/1.mp3" type="audio/mpeg" />
+</audio>        
+<audio id="audio_2">
+    <source src="audio/2.mp3" type="audio/mpeg" />
+</audio>        
+<audio id="audio_3">
+	<source src="audio/3.mp3" type="audio/mpeg" />
+</audio>
+        
+<img src="img/rollover/11.gif" class="rollover" alt="description" onMouseOver="this.src='img/rollover/11.gif'" onMouseOut="this.src='img/rollover/11.jpg'" onClick="document.getElementById('audio_1').play(); return false;" onDblClick="document.getElementById('audio_1').pause(); return false;">
+ /&gt; 
+            
+<img src="img/rollover/22.gif" class="rollover" alt="description" onMouseOver="this.src='img/rollover/22.gif'" onMouseOut="this.src='img/rollover/22.jpg'" onClick="document.getElementById('audio_2').play(); return false;" onDblClick="document.getElementById('audio_2').pause(); return false;">
+ /&gt;
+            
+<img src="img/rollover/33.gif" class="rollover" alt="description" onMouseOver="this.src='img/rollover/33.gif'" onMouseOut="this.src='img/rollover/33.jpg'" onClick="document.getElementById('audio_3').play(); return false;" onDblClick="document.getElementById('audio_3').pause(); return false;">
+/&gt;
+	</div>
+</div>
+<p class="tab"><a href="#vid">CBD Expert</a></p>		
+</article>
+</div>
+<!--end of audio section-->
+  
+    
+<!--beginning of parallax image-->
+<div class="parallax" data-parallax="scroll" data-bleed="10" data-speed="0.2" iosFix="true" data-image-src="img/parallax.jpg">
+</div>
+<!--end of parallax image-->
+
+<!--Divider-->	
+<div class="divider div-transparent div-arrow-down"></div>
+    
+<!--beginning of video section-->
+<div class="row orangeBG">
+<h2 id="vid">Hearing from a Professional</h2>
+<article>
+<p class="tab">An interview with the owner and operator of Megans CBD Market's.</p>	
+<video width="100%" height="100%" poster="img/poster.jpg" controls>
+<source src="img/video.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<p class="tab"><a href="#num">CBD History</a></p>
+</article>
+</div>
+<!--end of video section-->
+
+<!--beginning of infographic section-->
+<div class="row whiteBG">
+<h2 id="num"></h2>
+<article>
+<p class="tab"></p>
+<!--infographic embed code here-->
+</article>
+</div>
+   <div class="infogram-embed" data-id="c7470ef9-d4e6-4aa5-b1df-4f9fff7d392e" data-type="interactive" data-title="A Brief History of CBD"></div><script>!function(e,i,n,s){var t="InfogramEmbeds",d=e.getElementsByTagName("script")[0];if(window[t]&&window[t].initialized)window[t].process&&window[t].process();else if(!e.getElementById(n)){var o=e.createElement("script");o.async=1,o.id=n,o.src="https://e.infogram.com/js/dist/embed-loader-min.js",d.parentNode.insertBefore(o,d)}}(document,0,"infogram-async");</script><div style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px"><a href="https://infogram.com/c7470ef9-d4e6-4aa5-b1df-4f9fff7d392e" style="color:#989898!important;text-decoration:none!important;" target="_blank">A Brief History of CBD</a><br><a href="https://infogram.com" style="color:#989898!important;text-decoration:none!important;" target="_blank" rel="nofollow">Infogram</a></div>
+<!--end of infographic section-->
+	
+<!--beginning of footer-->
+<footer>Benefits of CBD for Anxiety | San Luis Obispo, CA | <a href="mailto: laurenhodgins8@gmail.com?Subject=Inquiry" target="_top">Send Email</a> | Copyright 2020 | Site by Lauren Hodgins 
+</footer>
+<!--end of footer-->
+	
+</body>
+	
+<!--the following script controls the responsive navigation-->
+<script>
+	(function($) { // Begin jQuery
+  $(function() { // DOM ready
+    // If a link has a dropdown, add sub menu toggle.
+    $('nav ul li a:not(:only-child)').click(function(e) {
+      $(this).siblings('.nav-dropdown').toggle();
+      // Close one dropdown when selecting another
+      $('.nav-dropdown').not($(this).siblings()).hide();
+      e.stopPropagation();
+    });
+    // Clicking away from dropdown will remove the dropdown class
+    $('html').click(function() {
+      $('.nav-dropdown').hide();
+    });
+    // Toggle open and close nav styles on click
+    $('#nav-toggle').click(function() {
+      $('nav ul').slideToggle();
+    });
+    // Hamburger to X toggle
+    $('#nav-toggle').on('click', function() {
+      this.classList.toggle('active');
+    });
+  }); // end DOM ready
+})(jQuery); // end jQuery
+	</script>
+	<script>
+	var headertext = [];
+var headers = document.querySelectorAll("#miyazaki th"),
+tablerows = document.querySelectorAll("#miyazaki th"),
+tablebody = document.querySelector("#miyazaki tbody");
+for(var i = 0; i < headers.length; i++) {
+	var current = headers[i];
+	headertext.push( current.textContent.replace( /\r?\n|\r/,"") );
+}
+for (var i = 0, row; row = tablebody.rows[i]; i++) {
+	for (var j = 0, col; col = row.cells[j]; j++) {
+		col.setAttribute("data-th", headertext[j]);
+	}
+}
+</script>
+	
+	<!----Prevents audio tracks from playing simultaneously---->
+<script>
+document.addEventListener('play', function(e){
+    var audios = document.getElementsByTagName('audio');
+    for(var i = 0, len = audios.length; i < len;i++){
+        if(audios[i] != e.target){
+            audios[i].pause();
+        }
+    }
+}, true);
+    </script>
+
+</html>
